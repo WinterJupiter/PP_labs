@@ -76,6 +76,7 @@ int main()
         auto dif = std::chrono::duration_cast<std::chrono::milliseconds>(end - begin);
         a[j] = dif.count();
     }
+    
     int sum = 0;
     std::ofstream out("D:\\res.txt", std::ios::app);
     if (out.is_open())
